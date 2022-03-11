@@ -16,6 +16,7 @@
 		C847D57227DB37F100D054A7 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C847D57127DB37F100D054A7 /* FirebaseFirestoreSwift-Beta */; };
 		C847D57427DB382600D054A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C847D57327DB382600D054A7 /* GoogleService-Info.plist */; };
 		C847D57627DB43F600D054A7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847D57527DB43F600D054A7 /* Item.swift */; };
+		C847D57827DB776500D054A7 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847D57727DB776500D054A7 /* ItemsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C847D56527DB344D00D054A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C847D57327DB382600D054A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C847D57527DB43F600D054A7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C847D57727DB776500D054A7 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				C847D57327DB382600D054A7 /* GoogleService-Info.plist */,
 				C847D55E27DB344C00D054A7 /* Firebase_TestApp.swift */,
+				C847D57727DB776500D054A7 /* ItemsViewModel.swift */,
 				C847D56027DB344C00D054A7 /* ContentView.swift */,
 				C847D57527DB43F600D054A7 /* Item.swift */,
 				C847D56227DB344D00D054A7 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C847D56127DB344C00D054A7 /* ContentView.swift in Sources */,
+				C847D57827DB776500D054A7 /* ItemsViewModel.swift in Sources */,
 				C847D57627DB43F600D054A7 /* Item.swift in Sources */,
 				C847D55F27DB344C00D054A7 /* Firebase_TestApp.swift in Sources */,
 			);
