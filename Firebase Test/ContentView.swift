@@ -12,7 +12,7 @@ import FirebaseFirestoreSwift
 struct ContentView: View {
     
     @State var viewModel = ItemsViewModel()
-    
+    var auth = Auth.auth()
     var body: some View {
         
         VStack{
@@ -21,7 +21,13 @@ struct ContentView: View {
             AddItemView(viewModel: viewModel)
             
         }.onAppear(perform: {
-            viewModel.listenToFirestore()
+            
+            auth.signInAnonymously{ authResult, error in
+                guard let _ = authResult?.user else {return}
+                viewModel.listenToFirestore()
+            }
+            
+            
         })
     }
     
@@ -40,7 +46,7 @@ struct itemListView: View{
             ForEach(viewModel.items){ item in
                 
                 HStack{
-                    Text(item.name)
+                    Text(item.name).strikethrough(item.done)
                     Spacer()
                     Button(action: {
                         viewModel.toggleDone(item: item)
